@@ -34,7 +34,7 @@ The following keys should be null if it is a vowel.
 
          
 6) "CArticulation"
-	1) Denotes the Method of Articulation
+	1) Denotes the Method of Articulation 
 	2) Expects: int (0-8)
 	3)  Options Table:
 
@@ -51,7 +51,7 @@ The following keys should be null if it is a vowel.
 #### Vowel Keys:
 The following are for vowels. They should be null for consonants:
 8) "VHeight"
-	1) Denotes the height of articulation of the vowel
+	1) Denotes the height of articulation of the vowel in other words the open or closeness of the vowels 
 	2) Expects: int (0-3)
 	3)  Options Table:
 
@@ -61,4 +61,6 @@ The following are for vowels. They should be null for consonants:
 | 2 | Open-Mid/Near-Open |
 | 3 | Open               |
 	NOTE: I NEED TO ADJUST THE PYTHON CODE NOW THAT MY VOWELS SEEM SET
-9) "VPlacement": null, "Open_Close": null, "ImagePath": null}
+9) "VPlacement"
+	1) Denotes the later
+10) : null, "Open_Close": null, "ImagePath": null}
