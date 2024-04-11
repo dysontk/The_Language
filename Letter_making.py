@@ -33,7 +33,7 @@ def showAttributes(letter):
 def showAttributesWords(letter):
     articulationOpts = ['Plosive', 'Nasal', 'Trill', 'Tap', 'Fricative',
          'Lateral Fricative', 'Approximant', 'Lateral Approximant', 'Click']
-    placementOpts = ['Bilabial', 'Labioental', 'Dental',
+    placementOpts = ['Bilabial', 'Labiodental', 'Dental',
                 'Alveolar',	'Post alveolar', 'Retroflex', 'Palatal', 
                 'Velar', 'Uvular',	'Pharyngeal', 'Glottal', 'Not applicable']
     Openness = ['Closed', 'Near-closed', 'Close-mid', 'Mid', 'Open-mid', 'Near-open', 'Open']
