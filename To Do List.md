@@ -1,0 +1,16 @@
+- [x] Start writing Hello World document
+- [ ] Update Letter maker with new vowel information
+- [ ] Finalize [[Standard Phonetic Typography]]
+- [ ] Finish Letter documentation
+- [ ] Make letter icons
+- [ ] Make word maker
+	- [ ] verb maker
+	- [ ] noun maker
+	- [ ] info for whether the word is used?
+		- [ ] Whether forms of the word are used
+		- [ ] Where is the word used
+	- [ ] .JSON to .TeX dictionary/glossary auto gen 
+- [ ] System for changing parts of speech
+- [ ] clicks?
+- [ ] Make repo elsewhere and see if LF CFLF or whatever matters
+- [ ] Cite references in [[Computational Documentation Intro]] 
