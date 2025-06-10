@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "To Do List.md",
+                "file": "Standard Phonetic Typography.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "To Do List"
+              "title": "Standard Phonetic Typography"
             }
           },
           {
@@ -65,6 +65,26 @@
           }
         ],
         "currentTab": 1
+      },
+      {
+        "id": "d60744897d5057f9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4bd1953fecca371d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computational Documentation Intro.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Computational Documentation Intro"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -83,7 +103,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -207,10 +228,10 @@
   },
   "active": "7f12e4abfcac3823",
   "lastOpenFiles": [
+    "To Do List.md",
     "Computational Documentation Intro.md",
     "Hello.md",
     "Standard Phonetic Typography.md",
-    "References.md",
-    "To Do List.md"
+    "References.md"
   ]
 }
