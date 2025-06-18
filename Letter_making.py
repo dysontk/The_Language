@@ -19,9 +19,52 @@ VowelArt = Enum('VowelArt', [(VowelArtList[i], i) for i in range(len(VowelArtLis
 RoundednessList = ['NA', 'ROUND', 'UNROUNDED']
 Roundedness = Enum('Roundedness', [(RoundednessList[r], r) for r in range(len(RoundednessList))])
 
-class letter(letter_dict):
+Voice = Enum('Voice', [('UNVOICED', 0),('VOICED',1), ('OTHER', 2)])
+
+class Letter(letter_dict):
     def __init__(self, letter_dict):
-        self.name = name,
+        self.name = letter_dict['name']
+        self.ascii = letter_dict['ascii']
+        self.type = letter_dict['type'] #make this an enum: Vowel, consonant, other
+        self.imagePath = letter_dict['imagepath']
+        self.audioPath = letter_dict['audioPath']
+        self.voice = Voice(letter_dict['voice'])
+        self.cPlace = ConPlace(letter_dict['cplace'])
+        self.cArt = ConArt(letter_dict['cart'])
+        self.vPlace = VowelPlace(letter_dict['vplace'])
+        self.vArt = VowelArt(letter_dict['vart'])
+        self.round = Roundedness(letter_dict['round'])
+        
+
+def Letter_from_line(info_string):
+
+    keysList = ['name', 'ascii', 'type', 'voice', 'cplace', 'cart', 'vplace', 'vart', 'round', 'imagepath', 'audiopath']
+    info_split = info_string.split()
+    let_dic = {keysList[i]:info_split[i] for i in range(len(info_split))}
+    # for i in range(len(info_split)):
+    return Letter(let_dic)
+
+def Consonant_Maker():
+    numPlace = len(ConPlaceList)
+    numArt = len(ConArtList)
+    collected_letters = []
+    for i in range(0, numPlace):
+        for j in range(0, numArt):
+            for k in range(len(Voice)):
+            #ask for input on whether there's a letter here and if so, what's its name, ascii, and paths
+            print(f"Is there a letter that is a(n) {Voice(k)} {ConPlace(i)} {ConArt(j)}?")
+            let_dic = {}
+            name = input("If so, tell me its name or leave blank to skip")
+            if name == '':
+                continue
+            else:
+                let_dic.update({'name': name})
+                let_dic.update({'ascii':input("thank you, what is this letter's ascii representation?"),
+                'imagepath': input("Provide the path to the image location if applicable."),
+                'audiopath': input("Provide the path to the audio file if applicable")})
+                collected_letters.append(Letter(let_dic))
+    return collected_letters
+                
 
 def make_letter_auto(nomen, typ, voi, cplace=None, cmoa=None, vHite=None, vplace=None, round=None, img=None):
     # typword = 'Consonant' if typ else 'Vowel'
